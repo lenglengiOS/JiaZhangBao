@@ -11,6 +11,8 @@
 
 @interface LHLHomeController ()
 
+@property (nonatomic, strong) UIScrollView *scrollView;
+
 @end
 
 @implementation LHLHomeController
@@ -49,13 +51,19 @@
 }
 
 - (void)renderMainView{
-    UIScrollView *scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, ScreenWidth, ScreenHeight-64-44)];
-//    scrollView.contentSize = CGSizeMake(ScreenWidth, 225);
+    
+    UIScrollView *scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, ScreenWidth, ScreenHeight - 64-44)];
+    scrollView.contentSize = CGSizeMake(ScreenWidth, ScreenHeight - 64-44);
     [self.view addSubview:scrollView];
     
     LHLHeaderView *headerView = [[LHLHeaderView alloc] initWithFrame:CGRectMake(0, 0, ScreenWidth, 300)];
     [scrollView addSubview:headerView];
+    self.scrollView=scrollView;
     
+    CGFloat Y = CGRectGetMaxY(headerView.frame);
+    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, Y + 20, ScreenWidth, 500)];
+    view.backgroundColor = [UIColor redColor];
+    [scrollView addSubview:view];
 }
 
 
