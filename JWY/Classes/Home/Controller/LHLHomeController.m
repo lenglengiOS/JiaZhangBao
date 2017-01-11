@@ -47,6 +47,7 @@
     UIButton *msgBtn = [[UIButton alloc] initWithFrame:CGRectMake(50, 0, 40, 44)];
     [msgBtn setImage:[UIImage imageNamed:@"main_mes"] forState:UIControlStateNormal];
     [msgBtn addTarget:self action:@selector(clickMsgBTn) forControlEvents:UIControlEventTouchUpInside];
+    
     [view addSubview:msgBtn];
 }
 
