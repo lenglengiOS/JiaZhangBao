@@ -22,7 +22,7 @@
     // 设置导航栏背景颜色
     self.navigationBar.tintColor = [UIColor whiteColor];
     self.navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName: [UIColor whiteColor]};
-    self.navigationBar.barTintColor = [UIColor colorWithRed:0.20 green:0.73 blue:0.67 alpha:1.00];
+    self.navigationBar.barTintColor = [UIColor colorWithString:@"#56C0B0"];
     self.navigationBar.translucent = NO;
 }
 

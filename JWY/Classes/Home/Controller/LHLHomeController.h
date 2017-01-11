@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "LHLBaseViewController.h"
+#import "LHLHeaderView.h"
 
-@interface LHLHomeController : UITableViewController
+@interface LHLHomeController : LHLBaseViewController
 
 @end

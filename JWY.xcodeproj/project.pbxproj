@@ -20,6 +20,8 @@
 		9D3A1C271E12AF7900A6B376 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D3A1C201E12AF7900A6B376 /* AppDelegate.m */; };
 		9D3A1C2F1E12B01D00A6B376 /* LHLTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D3A1C2E1E12B01D00A6B376 /* LHLTabBarController.m */; };
 		9D3A1C321E12B02D00A6B376 /* LHLBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D3A1C311E12B02D00A6B376 /* LHLBaseViewController.m */; };
+		9D4376671E25C8BE006753C1 /* LHLHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D4376661E25C8BE006753C1 /* LHLHeaderView.xib */; };
+		9D43766A1E25CB8E006753C1 /* LHLHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D4376691E25CB8E006753C1 /* LHLHeaderView.m */; };
 		9DB6D7101E1545ED00D0B009 /* UIColor+LHLUtilites.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DB6D70F1E1545ED00D0B009 /* UIColor+LHLUtilites.m */; };
 		9DB6D7131E15465000D0B009 /* UIImage+image.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DB6D7121E15465000D0B009 /* UIImage+image.m */; };
 /* End PBXBuildFile section */
@@ -69,6 +71,10 @@
 		9D3A1C2E1E12B01D00A6B376 /* LHLTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LHLTabBarController.m; sourceTree = "<group>"; };
 		9D3A1C301E12B02D00A6B376 /* LHLBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LHLBaseViewController.h; sourceTree = "<group>"; };
 		9D3A1C311E12B02D00A6B376 /* LHLBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LHLBaseViewController.m; sourceTree = "<group>"; };
+		9D4376661E25C8BE006753C1 /* LHLHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LHLHeaderView.xib; sourceTree = "<group>"; };
+		9D4376681E25CB8E006753C1 /* LHLHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LHLHeaderView.h; sourceTree = "<group>"; };
+		9D4376691E25CB8E006753C1 /* LHLHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LHLHeaderView.m; sourceTree = "<group>"; };
+		9D43766B1E25CDD8006753C1 /* JWY.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JWY.pch; sourceTree = "<group>"; };
 		9DB6D70E1E1545ED00D0B009 /* UIColor+LHLUtilites.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+LHLUtilites.h"; sourceTree = "<group>"; };
 		9DB6D70F1E1545ED00D0B009 /* UIColor+LHLUtilites.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+LHLUtilites.m"; sourceTree = "<group>"; };
 		9DB6D7111E15465000D0B009 /* UIImage+image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+image.h"; sourceTree = "<group>"; };
@@ -200,6 +206,9 @@
 		9D3A1C151E12AF7900A6B376 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				9D4376661E25C8BE006753C1 /* LHLHeaderView.xib */,
+				9D4376681E25CB8E006753C1 /* LHLHeaderView.h */,
+				9D4376691E25CB8E006753C1 /* LHLHeaderView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -276,6 +285,7 @@
 				9DB6D70D1E15457500D0B009 /* Category */,
 				9D3A1C1F1E12AF7900A6B376 /* AppDelegate.h */,
 				9D3A1C201E12AF7900A6B376 /* AppDelegate.m */,
+				9D43766B1E25CDD8006753C1 /* JWY.pch */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -467,6 +477,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D4376671E25C8BE006753C1 /* LHLHeaderView.xib in Resources */,
 				9D3A1BEE1E12AC7600A6B376 /* LaunchScreen.storyboard in Resources */,
 				9D3A1BEB1E12AC7600A6B376 /* Assets.xcassets in Resources */,
 			);
@@ -499,6 +510,7 @@
 				9D1117B61E13F5A200CDD33E /* LHLNavigationController.m in Sources */,
 				9D3A1C321E12B02D00A6B376 /* LHLBaseViewController.m in Sources */,
 				9D3A1C271E12AF7900A6B376 /* AppDelegate.m in Sources */,
+				9D43766A1E25CB8E006753C1 /* LHLHeaderView.m in Sources */,
 				9D3A1BE01E12AC7600A6B376 /* main.m in Sources */,
 				9D1117B91E13F5E200CDD33E /* LHLHomeController.m in Sources */,
 				9DB6D7101E1545ED00D0B009 /* UIColor+LHLUtilites.m in Sources */,
@@ -644,6 +656,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = /Users/lenghonglin/Desktop/JiaZhangBao/JWY/Classes/Other/JWY.pch;
 				INFOPLIST_FILE = JWY/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -656,6 +670,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = /Users/lenghonglin/Desktop/JiaZhangBao/JWY/Classes/Other/JWY.pch;
 				INFOPLIST_FILE = JWY/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

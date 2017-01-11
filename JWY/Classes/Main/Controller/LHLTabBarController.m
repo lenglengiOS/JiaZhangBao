@@ -30,6 +30,7 @@
     NSMutableDictionary *attrsNor = [NSMutableDictionary dictionary];
     attrsNor[NSFontAttributeName] = [UIFont systemFontOfSize:11];
     [item setTitleTextAttributes:attrsNor forState:UIControlStateNormal];
+
 }
 
 - (BOOL)prefersStatusBarHidden { //设置隐藏显示

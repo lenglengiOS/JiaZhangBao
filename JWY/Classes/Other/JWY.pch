@@ -1,0 +1,16 @@
+//
+//  JWY.pch
+//  JWY
+//
+//  Created by 冷洪林 on 2017/1/11.
+//  Copyright © 2017年 冷洪林. All rights reserved.
+//
+
+#ifndef JWY_pch
+#define JWY_pch
+
+// 屏幕宽高
+#define ScreenWidth [UIScreen mainScreen].bounds.size.width
+#define ScreenHeight [UIScreen mainScreen].bounds.size.height
+
+#endif /* JWY_pch */

@@ -7,6 +7,7 @@
 //
 
 #import "LHLHomeController.h"
+#import "UIColor+LHLUtilites.h"
 
 @interface LHLHomeController ()
 
@@ -17,8 +18,17 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.view.backgroundColor = [UIColor colorWithString:@"#F5F5F5"];
+    
     // 导航条右边按钮
     [self renderRightBarItem];
+    
+    // mainView
+    [self renderMainView];
+    
+    // 去除导航栏下边的黑线
+    [self.navigationController.navigationBar setBackgroundImage:[[UIImage alloc] init] forBarMetrics:UIBarMetricsDefault];
+    [self.navigationController.navigationBar setShadowImage:[[UIImage alloc] init]];
 }
 
 - (void) renderRightBarItem{
@@ -38,12 +48,24 @@
     [view addSubview:msgBtn];
 }
 
+- (void)renderMainView{
+    UIScrollView *scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, ScreenWidth, ScreenHeight-64-44)];
+//    scrollView.contentSize = CGSizeMake(ScreenWidth, 225);
+    [self.view addSubview:scrollView];
+    
+    LHLHeaderView *headerView = [[LHLHeaderView alloc] initWithFrame:CGRectMake(0, 0, ScreenWidth, 300)];
+    [scrollView addSubview:headerView];
+    
+}
+
+
+
 - (void)clickSearchBTn{
-    NSLog(@"clickSearchBTn");
+    NSLog(@"搜索");
 }
 
 - (void)clickMsgBTn{
-    NSLog(@"clickMsgBTn");
+    NSLog(@"消息");
 }
 
 - (void)didReceiveMemoryWarning {
@@ -51,30 +73,6 @@
     // Dispose of any resources that can be recreated.
 }
 
-#pragma mark - Table view data source
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-
-    return 1;
-}
-
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-
-    return 10;
-}
-
-
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    static NSString *cellID = @"cellID";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellID];
-    
-    if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:cellID];
-    }
-    
-    cell.textLabel.text = @"66";
-    
-    return cell;
-}
 
 @end
