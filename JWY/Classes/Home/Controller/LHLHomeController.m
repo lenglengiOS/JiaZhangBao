@@ -52,8 +52,9 @@
 
 - (void)renderMainView{
     
-    UIScrollView *scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, ScreenWidth, ScreenHeight - 64-44)];
-    scrollView.contentSize = CGSizeMake(ScreenWidth, ScreenHeight - 64-44);
+    UIScrollView *scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, ScreenWidth, ScreenHeight - 64)];
+    scrollView.backgroundColor = [UIColor redColor];
+    scrollView.contentSize = CGSizeMake(ScreenWidth, 1500);
     [self.view addSubview:scrollView];
     
     LHLHeaderView *headerView = [[LHLHeaderView alloc] initWithFrame:CGRectMake(0, 0, ScreenWidth, 300)];
